@@ -9,16 +9,16 @@ import java.util.List;
 
 @Service
 public class UsuarioServiceImpl implements UsuarioService {
-    @Autowired
-    private UsuarioRepository repository;
-
-    @Override
-    public Usuario cadastrarUsuario(Usuario usuario) {
-        return repository.save(usuario);
-    }
-
-    @Override
-    public List<Usuario> listarTodos() {
-        return repository.findAll();
-    }
+	@Autowired
+	private UsuarioRepository repository;
+	
+	@Override
+	public Usuario cadastrarUsuario(Usuario usuario) {
+		return repository.save(usuario);
+	}
+	
+	@Override
+	public List<Usuario> listarTodos() {
+		return repository.findAll();
+	}
 }
